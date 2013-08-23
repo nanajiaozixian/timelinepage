@@ -5,6 +5,7 @@
 <title>Timeline</title>
 <link href="css/style.css" type="text/css" rel="stylesheet"></link>
 <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
  <script type="text/javascript">
     
         $(document).ready(function() {
@@ -46,9 +47,9 @@
 
 <body>
 <div id="separation"></div>
-<div id="content_container">
+<div id="main_page_container">
 	<div id="header">
-    	<div id="logo"><a href="www.wartisan.com" target="_blank">TIMELINE</a></div>
+    	<div id="logo"><a href="http://www.wartisan.com" target="_blank">TIMELINE</a></div>
 	</div><!--end header-->  
     <div id="main_content">
     	<div id="left">
@@ -88,6 +89,20 @@
         </div>
         
     </div>
-</div><!--end content_container-->
+    
+</div><!--end main_page_container-->
+<div id="snapshot_page_container">
+	<div id="content_snp">
+    	<div id="main_snp">
+			<p>Enter your page  URL here</p>
+            <textarea rows="2" cols="40"></textarea>
+            <div id="btn_snp">
+            	<button id="back" class="cbtn_snp"></button>
+            	<button id="takesnap"  title="snapshot"></button>             
+                <button id="show" class="cbtn_snp"></button>
+            </div>
+        </div>
+	</div>
+</div><!--end snapshot_page_container-->
 </body>
 </html>
